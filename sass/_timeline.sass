@@ -1,0 +1,93 @@
+.timeline
+  margin-bottom: 20px
+  .wrapper
+    width: $page_width
+    padding: 20px 0 0
+    margin: auto
+    position: relative
+
+    .more-blogs
+      text-align: center
+      a
+        box-shadow: 0px 0px 5px #999
+        &:hover
+          color: white
+
+    .blog-posts
+      margin-bottom: 40px
+      .blog-item
+        position: relative
+        box-sizing: content-box
+        width: 47.6%
+        padding-top: 80px
+        &:nth-child(2n)
+          float: right
+          padding-left: 20px
+          margin-left: 20px
+          border-left: 5px solid #999
+          &:before
+            content: ""
+            position: absolute
+            width: 10px
+            height: 10px
+            border: 5px solid white
+            border-radius: 100%
+            background: #999
+            top: 100px
+            left: -12px
+
+        &:nth-child(2n+1)
+          float: left
+          padding-right: 20px
+          margin-right: 20px
+          border-right: 5px solid #999
+          &:before
+            content: ""
+            position: absolute
+            width: 10px
+            height: 10px
+            border: 5px solid white
+            border-radius: 100%
+            background: #999
+            top: 100px
+            right: -12px
+
+        .thumbnail
+          box-shadow: 0px 0px 5px #999
+          height: 325px
+          overflow: hidden
+          position: relative
+          &:hover .hidden-items
+            transition: 0.5s
+            opacity: 1
+          .hidden-items
+            transition: 0.5s
+            opacity: 0
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: rgba(0,0,0,0.4)
+            padding-top: 50px
+
+            h1
+              color: white
+              padding-left: 20px
+
+            p
+              color: white
+              padding-left: 20px
+              margin: 20px 0
+              line-height: 1.5
+            span.post-time
+              color: white
+              padding-left: 20px
+            .read-btn
+              position: absolute
+              bottom: 30px
+              right: 30px
+              color: white
+              &:hover
+                color: $light_pink
+                padding-right: 20px

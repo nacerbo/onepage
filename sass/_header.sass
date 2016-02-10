@@ -1,0 +1,52 @@
+.header
+  width: 100%
+  background: $mid_blue
+
+  .wrapper
+    position: relative
+    width: $page_width
+    height: $header_height
+    margin: auto
+
+    #right-nav, #left-nav
+
+      ul
+        width: 100%
+        li
+          float: right
+          padding: auto 5px
+          height: 80px
+          overflow: hidden
+
+
+          a
+            line-height: $header_height - 2.5px
+            font-size: 20px
+            padding: 30px 10px
+            color: $light_blue
+            &:hover
+              background: $dark_blue
+              color: #FFF
+
+    #left-nav
+      float: left
+
+    #right-nav
+      float: right
+
+    .logo
+      width: 100px
+      height: 100px
+      position: absolute
+      right: 385px
+      top:   15px
+      border-radius: 100%
+      padding: 5px
+      background: $light_blue
+      overflow: hidden
+      z-index: 9
+
+      img
+        border-radius: 100%
+        padding: 2px
+        background: #354b60

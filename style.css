@@ -1,0 +1,603 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(https://www.google.com/fonts#ChoosePlace:select/Collection:Open+Sans);
+/* reset code */
+/* line 2, sass/_reset.sass */
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+/* line 5, sass/_reset.sass */
+*:hover {
+  transition: 0.5s;
+}
+
+/* line 7, sass/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  float: none;
+  vertical-align: baseline;
+}
+
+/* line 14, sass/_reset.sass */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HTML 5 */
+/* line 19, sass/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 22, sass/_reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 25, sass/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 27, sass/_reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, sass/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 32, sass/_reset.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 34, sass/_reset.sass */
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #11568B;
+}
+/* line 38, sass/_reset.sass */
+a:hover {
+  color: #9AC4E5;
+}
+
+/* line 40, sass/_reset.sass */
+progress::-webkit-progress-bar {
+  display: block;
+  width: 100%;
+}
+
+/* line 43, sass/_reset.sass */
+progress::-moz-progress-bar {
+  display: block;
+  width: 100%;
+}
+
+/* line 1, sass/_btns.sass */
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 3px;
+}
+/* line 6, sass/_btns.sass */
+.btn:hover {
+  background: #11568B;
+  border: none !important;
+  padding: 10.5px 15.5px;
+}
+
+/* line 1, sass/_progress_bar.sass */
+.progress {
+  width: 100%;
+  height: 30px;
+  background: #FFF;
+  border: 2px solid #ccc;
+  position: relative;
+  margin: 20px 0;
+}
+/* line 9, sass/_progress_bar.sass */
+.progress .percentage_bg {
+  background: #431773;
+  height: 100%;
+}
+/* line 12, sass/_progress_bar.sass */
+.progress .percentage_numb {
+  position: absolute;
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  color: #ccc;
+}
+
+/* line 1, sass/_header.sass */
+.header {
+  width: 100%;
+  background: #3F7098;
+}
+/* line 5, sass/_header.sass */
+.header .wrapper {
+  position: relative;
+  width: 920px;
+  height: 80px;
+  margin: auto;
+}
+/* line 13, sass/_header.sass */
+.header .wrapper #right-nav ul, .header .wrapper #left-nav ul {
+  width: 100%;
+}
+/* line 15, sass/_header.sass */
+.header .wrapper #right-nav ul li, .header .wrapper #left-nav ul li {
+  float: right;
+  padding: auto 5px;
+  height: 80px;
+  overflow: hidden;
+}
+/* line 22, sass/_header.sass */
+.header .wrapper #right-nav ul li a, .header .wrapper #left-nav ul li a {
+  line-height: 77.5px;
+  font-size: 20px;
+  padding: 30px 10px;
+  color: #9AC4E5;
+}
+/* line 27, sass/_header.sass */
+.header .wrapper #right-nav ul li a:hover, .header .wrapper #left-nav ul li a:hover {
+  background: #11568B;
+  color: #FFF;
+}
+/* line 31, sass/_header.sass */
+.header .wrapper #left-nav {
+  float: left;
+}
+/* line 34, sass/_header.sass */
+.header .wrapper #right-nav {
+  float: right;
+}
+/* line 37, sass/_header.sass */
+.header .wrapper .logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 385px;
+  top: 15px;
+  border-radius: 100%;
+  padding: 5px;
+  background: #9AC4E5;
+  overflow: hidden;
+  z-index: 9;
+}
+/* line 49, sass/_header.sass */
+.header .wrapper .logo img {
+  border-radius: 100%;
+  padding: 2px;
+  background: #354b60;
+}
+
+/* line 1, sass/_hero.sass */
+.container {
+  width: 100%;
+}
+/* line 4, sass/_hero.sass */
+.container .hero-head {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* line 12, sass/_hero.sass */
+.container .hero-head video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: -333;
+}
+/* line 22, sass/_hero.sass */
+.container .hero-head .wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+/* line 25, sass/_hero.sass */
+.container .hero-head .wrapper .item {
+  width: 920px;
+  margin: auto;
+  padding: 330px 0 0;
+  text-align: center;
+  z-index: 4;
+}
+/* line 31, sass/_hero.sass */
+.container .hero-head .wrapper .item p {
+  font-size: 30px;
+  color: #9AC4E5;
+}
+/* line 34, sass/_hero.sass */
+.container .hero-head .wrapper .item .hero-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 30px 0 0;
+  font-size: 30px;
+  display: inline-block;
+}
+
+/* line 1, sass/_why_me.sass */
+.section-header {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* line 5, sass/_why_me.sass */
+.why-me .wrapper {
+  width: 920px;
+  padding: 20px 0 0;
+  margin: auto;
+}
+/* line 10, sass/_why_me.sass */
+.why-me .section-header {
+  text-align: center;
+  margin: 50px 0;
+}
+/* line 14, sass/_why_me.sass */
+.why-me .personal-skills .p-skill {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 300px;
+  margin-bottom: 20px;
+}
+/* line 19, sass/_why_me.sass */
+.why-me .personal-skills .p-skill:nth-child(3n) {
+  margin: 0 0 10px;
+}
+/* line 21, sass/_why_me.sass */
+.why-me .personal-skills .p-skill:nth-child(3n+1) {
+  margin: 0 10px 0 0;
+}
+/* line 24, sass/_why_me.sass */
+.why-me .personal-skills .p-skill .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #11568B;
+  position: relative;
+  margin: 0 auto 10px;
+  transition: 0.5s;
+}
+/* line 32, sass/_why_me.sass */
+.why-me .personal-skills .p-skill .icon:hover {
+  background: #FFF;
+  border: 1px solid #ccc;
+}
+/* line 35, sass/_why_me.sass */
+.why-me .personal-skills .p-skill .icon:hover i {
+  color: #431773;
+}
+/* line 39, sass/_why_me.sass */
+.why-me .personal-skills .p-skill .icon i {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+}
+/* line 45, sass/_why_me.sass */
+.why-me .personal-skills .p-skill .desc {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* line 2, sass/_my_work.sass */
+.my-works .wrapper {
+  width: 920px;
+  padding: 20px 0 0;
+  margin: auto;
+}
+/* line 6, sass/_my_work.sass */
+.my-works .item {
+  position: relative;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 300px;
+  margin: 0px 10px 20px 0;
+}
+/* line 12, sass/_my_work.sass */
+.my-works .item:nth-child(3n) {
+  margin: 0 10px 20px 0;
+}
+/* line 14, sass/_my_work.sass */
+.my-works .item:nth-child(3n+1) {
+  margin: 0 0 20px 0;
+}
+/* line 17, sass/_my_work.sass */
+.my-works .item:hover .hidden-card {
+  display: block;
+}
+/* line 19, sass/_my_work.sass */
+.my-works .item .hidden-card {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 70px 90px;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 29, sass/_my_work.sass */
+.my-works .item .hidden-card a {
+  font-size: 36px;
+  color: #9AC4E5;
+  padding: 0 5px;
+  line-height: 60px;
+}
+/* line 34, sass/_my_work.sass */
+.my-works .item .hidden-card a:hover {
+  color: #B597D7;
+}
+/* line 36, sass/_my_work.sass */
+.my-works .item .hidden-card a + a {
+  margin-left: 20px;
+}
+
+/* line 2, sass/_my_skills.sass */
+.my-skills .wrapper {
+  width: 920px;
+  padding: 20px 0 0;
+  margin: auto;
+}
+/* line 6, sass/_my_skills.sass */
+.my-skills .wrapper .skills-item {
+  position: relative;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 450px;
+  margin: 0px 10px 20px 0;
+}
+/* line 13, sass/_my_skills.sass */
+.my-skills .wrapper .skills-item span {
+  display: block;
+}
+/* line 15, sass/_my_skills.sass */
+.my-skills .wrapper .skills-item progress {
+  display: block;
+  width: 100%;
+}
+
+/* line 1, sass/_timeline.sass */
+.timeline {
+  margin-bottom: 20px;
+}
+/* line 3, sass/_timeline.sass */
+.timeline .wrapper {
+  width: 920px;
+  padding: 20px 0 0;
+  margin: auto;
+  position: relative;
+}
+/* line 9, sass/_timeline.sass */
+.timeline .wrapper .more-blogs {
+  text-align: center;
+}
+/* line 11, sass/_timeline.sass */
+.timeline .wrapper .more-blogs a {
+  box-shadow: 0px 0px 5px #999;
+}
+/* line 13, sass/_timeline.sass */
+.timeline .wrapper .more-blogs a:hover {
+  color: white;
+}
+/* line 16, sass/_timeline.sass */
+.timeline .wrapper .blog-posts {
+  margin-bottom: 40px;
+}
+/* line 18, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item {
+  position: relative;
+  box-sizing: content-box;
+  width: 47.6%;
+  padding-top: 80px;
+}
+/* line 23, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item:nth-child(2n) {
+  float: right;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 5px solid #999;
+}
+/* line 28, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item:nth-child(2n):before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 5px solid white;
+  border-radius: 100%;
+  background: #999;
+  top: 100px;
+  left: -12px;
+}
+/* line 39, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item:nth-child(2n+1) {
+  float: left;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 5px solid #999;
+}
+/* line 44, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item:nth-child(2n+1):before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 5px solid white;
+  border-radius: 100%;
+  background: #999;
+  top: 100px;
+  right: -12px;
+}
+/* line 55, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail {
+  box-shadow: 0px 0px 5px #999;
+  height: 325px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 60, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail:hover .hidden-items {
+  transition: 0.5s;
+  opacity: 1;
+}
+/* line 63, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail .hidden-items {
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 50px;
+}
+/* line 74, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail .hidden-items h1 {
+  color: white;
+  padding-left: 20px;
+}
+/* line 78, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail .hidden-items p {
+  color: white;
+  padding-left: 20px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+/* line 83, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail .hidden-items span.post-time {
+  color: white;
+  padding-left: 20px;
+}
+/* line 86, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail .hidden-items .read-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+}
+/* line 91, sass/_timeline.sass */
+.timeline .wrapper .blog-posts .blog-item .thumbnail .hidden-items .read-btn:hover {
+  color: #F7A7B7;
+  padding-right: 20px;
+}
+
+/* line 1, sass/_footer.sass */
+footer {
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 60px;
+  position: relative;
+  min-height: 600px;
+}
+/* line 9, sass/_footer.sass */
+footer .map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 74px;
+  left: 0;
+  z-index: -2;
+}
+/* line 16, sass/_footer.sass */
+footer .map iframe {
+  width: 100%;
+  height: 100%;
+}
+/* line 19, sass/_footer.sass */
+footer .contact-us {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 100px 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 26, sass/_footer.sass */
+footer .contact-us .wrapper {
+  width: 920px;
+  margin: auto;
+  padding: 20px 0;
+}
+/* line 33, sass/_footer.sass */
+footer .contact-us .wrapper .contact-form input, footer .contact-us .wrapper .contact-form textarea {
+  display: block;
+  width: 100%;
+  background: #FFF;
+  border: 3px #ccc solid;
+  margin: 10px 0 20px;
+  line-height: 26px;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+/* line 43, sass/_footer.sass */
+footer .contact-us .wrapper .contact-form textarea {
+  resize: vertical;
+}
+/* line 46, sass/_footer.sass */
+footer .contact-us .wrapper .contact-form p.inputs label {
+  color: #FFF;
+  margin: 20px 0;
+}
+/* line 50, sass/_footer.sass */
+footer .contact-us .wrapper .contact-form #send_msg:hover {
+  border: 3px #ccc solid;
+  background: #FFF;
+}
+/* line 57, sass/_footer.sass */
+footer .copy-right {
+  background: #354b60;
+  padding: 10px 0 0;
+}
+/* line 60, sass/_footer.sass */
+footer .copy-right .wrapper {
+  width: 920px;
+  margin: auto;
+  padding: 20px 0;
+}
+/* line 64, sass/_footer.sass */
+footer .copy-right .wrapper .left {
+  float: left;
+  color: #FFF;
+}
+/* line 67, sass/_footer.sass */
+footer .copy-right .wrapper .right {
+  float: right;
+}
+/* line 69, sass/_footer.sass */
+footer .copy-right .wrapper .right a + a {
+  margin-left: 10px;
+}
+/* line 71, sass/_footer.sass */
+footer .copy-right .wrapper .right a {
+  font-size: 24px;
+  color: #fff;
+}
+/* line 75, sass/_footer.sass */
+footer .copy-right .wrapper .right a:hover {
+  color: #B597D7;
+}
